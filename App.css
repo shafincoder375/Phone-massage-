@@ -1,0 +1,178 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login, .app {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+h2, h4 {
+  margin-top: 0;
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+.plus {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  background-color: #10b981;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.popup {
+  background-color: #f9fafb;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.friends {
+  margin-top: 20px;
+}
+
+.friends ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.friends li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.messages {
+  margin-top: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.messages div {
+  background-color: #e5e7eb;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+.messages div:hover {
+  background-color: #d1d5db;
+}
+
+.voice {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ef4444;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Modal CSS */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.modal button {
+  margin: 10px 5px;
+  padding: 10px 15px;
+  background-color: #e53e3e;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.modal button:hover {
+  background-color: #c53030;
+}
